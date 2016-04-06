@@ -13,41 +13,38 @@ import android.widget.TextView;
 /**
  * Created by Pooja at amura on 6/4/16.
  */
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends AppCompatActivity {
 
 
     Button btn_login;
-    EditText edt_username,edt_password;
+    EditText edt_username, edt_password;
     TextView tv_register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+        initLogin();
 
 
-
-
-        btn_login=(Button)findViewById(R.id.btn_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                Intent intent_login= new Intent(LoginActivity.this,MainActivity.class);
+                Intent intent_login = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent_login);
 
             }
         });
 
-        tv_register=(TextView)findViewById(R.id.tv_register);
 
         tv_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-               Intent intent_login= new Intent(LoginActivity.this,RegisterActivity.class);
-               startActivity(intent_login);
+                Intent intent_login = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent_login);
             }
         });
 
@@ -55,11 +52,12 @@ public class LoginActivity extends AppCompatActivity{
 
     }
 
-    /*public void init{
+    private void initLogin() {
+        edt_username = (EditText) findViewById(R.id.edt_username);
+        edt_password = (EditText) findViewById(R.id.edt_password);
+        tv_register = (TextView) findViewById(R.id.tv_register);
+        btn_login = (Button) findViewById(R.id.btn_login);
+    }
 
 
-        edt_name=(EditText)findViewById(R.id.edt_name_register);
-        edt_password=(EditText)findViewById(R.id.edt_password);
-        edt_confirmpassword=(EditText)findViewById(R.id.edt_confirm_password_rigister);
-    }*/
 }
