@@ -26,7 +26,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_content);
 
-        btn_register = (Button) findViewById(R.id.btn_register);
+        initRegister();
+
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,13 +41,13 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    /*public void init{
-
-
+    private void initRegister() {
         edt_name=(EditText)findViewById(R.id.edt_name_register);
-        edt_password=(EditText)findViewById(R.id.edt_password);
+        edt_password=(EditText)findViewById(R.id.edt_password_register);
         edt_confirmpassword=(EditText)findViewById(R.id.edt_confirm_password_rigister);
-    }*/
+        btn_register = (Button) findViewById(R.id.btn_register);
+    }
+
 
 
     @Override
