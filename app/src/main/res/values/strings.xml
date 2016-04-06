@@ -1,4 +1,29 @@
 <resources>
     <string name="app_name">DemoGitHub</string>
     <string name="action_settings">Settings</string>
+
+    <string name="nav_item_customer_list">Customer List</string>
+    <string name="nav_item_calls">Calls</string>
+    <string name="nav_item_Email">Email</string>
+
+    <string name="nav_item_inventory">Inventory</string>
+    <string name="nav_item_add_leads">Add Leads</string>
+    <string name="nav_item_notifications">Notifications</string>
+    <string name="drawer_open">Menu</string>
+    <string name="drawer_close">DemoGitHub</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_customer_list</item>
+        <item>@string/nav_item_calls</item>
+        <item>@string/nav_item_Email</item>
+        <item>@string/nav_item_inventory</item>
+        <item>@string/nav_item_add_leads</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
 </resources>
